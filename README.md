@@ -1,4 +1,4 @@
-# vue3-example-type-api
+# vue3-tailwind-example
 
 ## Project setup
 ```
