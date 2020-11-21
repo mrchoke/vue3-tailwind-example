@@ -1,6 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import Dialog from '@/state/Dialog'
 import 'tailwindcss/tailwind.css'
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+app.use(router)
+app.config.globalProperties.$dialog = Dialog
+app.mount('#app')
