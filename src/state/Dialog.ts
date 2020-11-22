@@ -20,7 +20,7 @@ export class SysDialog {
     return titles[this.type]
   }
 
-  datas(message: 'แจ้งเตือนจากระบบ', type: 'info') {
+  datas(message = 'แจ้งเตือนจากระบบ', type = 'info') {
     this.type = type
     this.message = message
     this.active = true
